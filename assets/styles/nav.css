@@ -21,12 +21,18 @@
 .img__nav{
     width: 50px;
     height: 50px;
+    margin-right: 5rem;
+}
+
+.img__mobile{
+    display: none;
 }
 
 .nav__list{
     display: flex;
     height: 100%;
     gap: 5rem;
+    align-items: center;
 }
 
 .nav__list a{
@@ -59,6 +65,7 @@
     border-radius: 40px 20px;
     box-shadow: 0px 10px 40px -12px #CD5FF8;
     cursor: pointer;
+    margin-left: 5rem;
 }
 
 .btn__nav:hover{
@@ -66,4 +73,140 @@
     color: #21ED8E;
     border: 2px solid #21ED8E;
     transition: 0.2s;
+}
+
+@media screen and (max-width: 1024px){
+
+    .img__nav{
+        margin: 0;
+
+    }
+
+    .btn__nav{
+        margin: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .nav__list {
+        gap: 3rem;
+    }
+
+    
+    .img__nav{
+        margin: 0;
+
+    }
+
+    .btn__nav{
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+
+    .nav{
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .img__mobile{
+        display: flex;
+        width: 50px;
+        margin-left: 1rem;
+    }
+
+    .img__nav{
+        display: none;
+    }
+
+    .nav__list{
+        font-size: 20px;
+    }
+
+    #btn__mobile{
+        display: flex;
+        background-color: white;
+        padding-left: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: white;
+    }
+
+    #hamburger{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+        margin-right: 1rem;
+
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        display: block;
+        margin-top: 5px;
+        transition: 0.3s;
+    }
+
+    .nav.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    .nav.active #hamburger::before{
+        transform:rotate(135deg);
+        position: relative;
+    }
+    .nav.active #hamburger::after{
+        transform:rotate(-135deg) ;
+        position: relative;
+        top: -7px;
+    }
+
+
+    .nav__list{
+        position: absolute;
+        width: 100%;
+        top: 52px;
+        right: 0;
+        background-color: white;
+        display: block;
+        height: 0;
+        transition: .6s;
+        z-index: 10000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+
+    .list{
+        color: black;
+        background-color: white;
+        padding: 0.5rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(27, 14, 44, 0.95);
+
+    }
+    .nav.active .nav__list{
+        height: 100vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .btn__nav{
+        background-color: #CD5FF8;
+    }
+
+
+
+
 }

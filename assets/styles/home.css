@@ -75,7 +75,6 @@ body{
 }
 
 .image__animated{
-    
     width: 450px;
 }
 
@@ -359,4 +358,49 @@ body::-webkit-scrollbar {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid var(--color-nav);  /* creates padding around scroll thumb */
   }
+
+
+
+  #btn__mobile{
+      display: none;
+  }
+
+/* AREA REPONSIVE ***********************************/
+
+@media screen and (max-width: 1024px){
+
+    .tittles__apresentation{
+        font-size: 42px;
+    }
+
+    .image__animated{
+        margin-left: 5rem;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .apresentation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5rem;
+    }
+    .tittles__apresentation{
+        font-size: 42px;
+        margin: 0;
+    }
+
+    .image__animated{
+        margin: 0;
+        width: 350px;
+    }
+
+    .introduction{
+        margin-top: 8rem;
+    }
+
+    
+}
 

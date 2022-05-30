@@ -99,37 +99,37 @@ body::-webkit-scrollbar-thumb {
   line-height: 1.4;
 }
 
-.apresentation__about b{
+.apresentation__about b {
   color: #21ea87;
   font-weight: 600;
 }
 
-.list__apresentation{
-    margin-left: 8rem;
-    font-family: var(--font-tittle);
-    color: #fff;
+.list__apresentation {
+  margin-left: 8rem;
+  font-family: var(--font-tittle);
+  color: #fff;
 }
 
-.list__apresentation h3{
-    font-weight: 600;
-    font-size: 28px;
-    text-transform: uppercase;
-    margin: 2rem 0 1rem 0;
+.list__apresentation h3 {
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin: 2rem 0 1rem 0;
 }
 
-.list__apresentation span{
-    color: #21ea87;
-    font-size: 28px;
+.list__apresentation span {
+  color: #21ea87;
+  font-size: 28px;
 }
 
-.list__apresentation li{
-    font-size: 20px;
-    line-height: 1.8;
-    text-transform: uppercase;
+.list__apresentation li {
+  font-size: 20px;
+  line-height: 1.8;
+  text-transform: uppercase;
 }
 
-.list__apresentation li::before{
-    content: "🕥";
+.list__apresentation li::before {
+  content: "🕥";
 }
 
 .myPicture {
@@ -183,8 +183,8 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 
-.progress__bar--container H2{
-    font-size: 25px;
+.progress__bar--container H2 {
+  font-size: 25px;
 }
 
 .progress__bar {
@@ -327,4 +327,54 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .apresentation__about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .emoji{
+    margin: 2rem;
+  }
+
+  .apresentation__about h2 {
+    margin: 0;
+  }
+
+  .apresentation__about p {
+    margin-left: 0;
+  }
+
+  .list__apresentation{
+    margin: 0;
+  }
+
+  .mypicture__about{
+    margin-top: 4rem;
+  }
+
+  .skills {
+    margin-left: 0;
+  }
+
+  .img__skills--picture{
+    display: none;
+  }
+
+  .tittle{
+    margin: 0;
+  }
+
+  .skillset__container {
+    margin-bottom: 5rem;
+  }
+
 }
