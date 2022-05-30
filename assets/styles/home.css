@@ -404,3 +404,14 @@ body::-webkit-scrollbar {
     
 }
 
+@media screen and (max-width: 600px){
+    .tittles__apresentation {
+        font-size: 39px;
+        margin: 0;
+}
+.image__animated {
+    margin: 0;
+    width: 330px;
+}
+
+}

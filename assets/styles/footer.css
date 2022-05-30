@@ -16,7 +16,7 @@
 
 .social__media--footer{
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: center;
 }
 
@@ -27,4 +27,10 @@
 
 .social__media--footer a:hover{
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px){
+  .footer{
+      font-size: 10px;
+  }
 }
