@@ -9,7 +9,7 @@ body {
   background-image: url(/assets/imgs/background2.png);
    background-repeat: no-repeat;
    background-attachment: fixed;
-   background-size: 100vw; 
+   background-size: 100vw;
  }
 
 /* AREA APRESENTATION ********************************/
@@ -387,11 +387,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 600px) {
-    .container{
-         background-image: url(/assets/imgs/background2.png);
+    body {
+        background-image: url(/assets/imgs/background2.png);
          background-repeat: no-repeat;
          background-attachment: fixed;
-         background-size: 100vw;
        }
 
   .tittles__apresentation {
