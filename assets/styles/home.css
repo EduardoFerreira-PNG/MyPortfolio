@@ -390,7 +390,6 @@ body::-webkit-scrollbar-thumb {
     body {
         background-image: url(/assets/imgs/background2.png);
          background-repeat: no-repeat;
-         background-attachment: fixed;
        }
 
   .tittles__apresentation {
