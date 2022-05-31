@@ -387,12 +387,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        background-image: url(/assets/imgs/background2.png);
+    .container{
+         background-image: url(/assets/imgs/background2.png);
          background-repeat: no-repeat;
          background-attachment: fixed;
-         background-size: 100vw 100vh; 
+         background-size: 100vw;
        }
+
   .tittles__apresentation {
     font-size: 39px;
     margin: 0;
