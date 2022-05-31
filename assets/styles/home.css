@@ -8,8 +8,7 @@
 body {
   background-image: url(/assets/imgs/background2.png);
    background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: 100vw;
+   background-attachment: scroll;
  }
 
 /* AREA APRESENTATION ********************************/
@@ -253,7 +252,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 600px) {
     body {
         background-image: url(/assets/imgs/background2.png);
-         background-repeat: no-repeat;
+        background-attachment: scroll;
        }
 
   .tittles__apresentation {
