@@ -8,7 +8,7 @@
 
 
 body{
-    background-image: url(/assets/imgs/background2.png);
+    background-image: url(/assets/imgs/background.png);
     background-color: rgba(0, 0, 5, 10.0);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -368,6 +368,9 @@ body::-webkit-scrollbar {
 /* AREA REPONSIVE ***********************************/
 
 @media screen and (max-width: 1024px){
+    body{
+        background-size: 100vh;
+    }
 
     .tittles__apresentation{
         font-size: 42px;
@@ -380,6 +383,9 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 768px){
+    body{
+        background-size: 100vh;
+    }
 
     .apresentation{
         display: flex;
@@ -405,6 +411,10 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 600px){
+
+    body{
+        background-size: 100vh;
+    }
     .tittles__apresentation {
         font-size: 39px;
         margin: 0;

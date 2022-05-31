@@ -378,3 +378,18 @@ body::-webkit-scrollbar-thumb {
   }
 
 }
+
+@media screen and (max-width: 600px){
+  .apresentation__about p{
+    width: 350px;
+  }
+
+  .list__apresentation{
+    margin-top: 2rem;
+  }
+
+  .skillset__btn{
+    width: 150px;
+    height: 120px;
+  }
+}
