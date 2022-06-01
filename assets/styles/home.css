@@ -268,14 +268,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 600px) {
    
 
-       .backdrop{
-         background-image: url(/assets/imgs/background2.png);
-         position: absolute;
-         top: 0;
-         bottom: 0;
-         right: 0;
-         left: 0;
-       }
+      
 
   .tittles__apresentation {
     font-size: 39px;
