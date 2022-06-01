@@ -13,6 +13,10 @@ body {
  @supports (-webkit-overflow-scrolling: touch) { 	
    body * { 		background-attachment: scroll; 	} }
 
+   .backdrop{
+     display: none;
+   }
+
 /* AREA APRESENTATION ********************************/
 
 .apresentation {
@@ -252,9 +256,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        background-image: url(/assets/imgs/background2.png);
-        background-attachment: scroll;
+   
+
+       .backdrop{
+         background-image: url(/assets/imgs/background2.png);
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         right: 0;
+         left: 0;
+         background-size: cover;
        }
 
   .tittles__apresentation {
