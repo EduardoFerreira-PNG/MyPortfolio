@@ -10,6 +10,8 @@ body {
    background-repeat: no-repeat;
    background-attachment: scroll;
  }
+ @supports (-webkit-overflow-scrolling: touch) { 	
+   body * { 		background-attachment: scroll; 	} }
 
 /* AREA APRESENTATION ********************************/
 
