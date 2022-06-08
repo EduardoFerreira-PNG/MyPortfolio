@@ -159,6 +159,13 @@ body {
 .social__media a {
   padding: 0.5rem;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
+
+}
+
+.social__media a:link{
+  text-decoration: none;
 }
 
 .social__media i:hover {
@@ -223,6 +230,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* AREA REPONSIVE ***********************************/
+
+@media screen and (min-width: 2000px) {
+  .tittles__apresentation{
+    margin-left: 25rem;
+    width: 40%;
+  }
+
+  .description p {
+    margin-left: 20rem;
+  }
+  
+}
 
 @media screen and (max-width: 1024px) {
   body {

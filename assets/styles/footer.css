@@ -21,6 +21,7 @@
 }
 
 .social__media--footer a{
+    color: white;
     cursor: pointer;
     width: 30px;
 }
